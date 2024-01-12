@@ -20,7 +20,7 @@ def minutesToMilliseconds(minutes):
     return minutes * 60000
 
 
-intervalTimeDelay = 30000 #minutesToMilliseconds(1) #How long before we take a new bandwidth test
+intervalTimeDelay = minutesToMilliseconds(30) #How long before we take a new bandwidth test
 smaWindow = 1 #How "smoothed out" the graph will be (a higher number means more smoothed out).
 
 downloads = []
